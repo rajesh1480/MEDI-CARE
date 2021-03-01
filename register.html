@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medi Care</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="text-align: center;font-size: 80px;"><span style="color: blue;">Medi</span>-<span style="color: green;">Care</span></h1>
+    </div>
+<div class="login-box">
+  <a href="register.html" style="color: white"><h1 class="register">Register</h1></a><a href="index.html" style="color: white"><span><h1 class="login">LogIn</h1></span></a>
+  <form id="contactform">
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="First Name" id="firstname">
+  </div>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="LastName" id="lastname" required>
+  </div>
+  <div class="textbox">
+    <i class="fas fa-genderless"></i>
+    <input type="text" placeholder="Gender" id="gender" required>
+  </div>
+  <div class="textbox">
+    <i class="fas fa-genderless"></i>
+    <input type="number" placeholder="Age" id="age" required>
+  </div>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="email" placeholder="Email ID" id="emailid" required>
+  </div>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" id="pass" required>
+  </div>
+  <button type="submit" onclick="myFunction()" class="btn">Submit</button>
+  </form>
+</div>
+<script>
+    function myFunction(){
+        alert("submission Successfull");
+        document.location.href="index.html";
+        }
+</script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+<script src="register.js"></script>
+</body>
+</html>

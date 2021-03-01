@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Medi Care</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function login()
+      {
+          var uname = document.getElementById("email").value;
+          var pwd = document.getElementById("pwd1").value;
+          var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+          if(uname =='')
+          {
+              alert("please enter user name.");
+          }
+          else if(pwd=='')
+          {
+              alert("enter the password");
+          }
+          else if(!filter.test(uname))
+          {
+              alert("Enter valid email id.");
+          }
+          else if(pwd.length < 8|| pwd.length > 15)
+          {
+              alert("Password min and max length is 15.");
+          }
+          else
+          {
+          window.location.href = "home.html";
+              }
+      }
+      
+    </script>
+  </head>
+  <body>
+      <div class="header">
+      <h1 style="text-align: center;font-size: 100px;"><span style="color: blue;">Medi</span>-<span style="color: green;">Care</span></h1>
+      </div>
+<div class="login-box">
+  <a href="index.html" style="color: white"><h1 class="login">Login</h1></a><a href="register.html" style="color: white"><span><h1 class="register">Register</h1></span></a>
+  <form>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" placeholder="Username" name="email" id="email" required >
+  </div>
+
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" placeholder="Password" id="pwd1" required>
+  </div>
+    <input type="button"  onclick="login()" class="btn" value="Sign in">
+  </form>
+</div>
+</body>
+</html>

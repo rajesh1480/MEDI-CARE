@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medi Care</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-title">
+        <h1 style="margin-left: 600px"><span style="color: blue;">MEDI</span> CARE</h1>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>Customer login</li>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Home</li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="medicine.html">ALL MEDICINES</a>
+      <a href="doctor ap.html">DOCTOR APPOINTMENT</a>
+      <a href="index.html">LOGOUT</a>
+      <a href="contact.html">CONTACT US</a>
+    </div>
+
+    <div class="teee" style="margin-left: 150px;">
+      <h1 style="margin-bottom: 60px; margin-left: 200px; padding-top: 40px">
+        Appointment
+      </h1>
+
+    
+        <form class="fgh" id="fgh">
+            <br /><br />
+          <label>Patient Name</label>
+          <input type="text" id="pname"/><br /><br />
+          <label>Mobile Number</label>
+          <input type="text" id="mno"/><br /><br />
+          <label>Email</label>
+          <input type="text" id="email"/><br /><br />
+          <label>Address</label>
+          <input type="text" id="address"/><br /><br />
+          <button type="submit" onclick="fun()" >Submit</button>
+      </form>
+        
+        <h1 style="margin-left: 800px;margin-top: -500px;">
+          Chat with Doctor
+        </h1>
+        <form class="gg" id="gg">
+          <br /><br />
+          <label> Name</label>
+          <input type="text" id="name"/><br /><br />
+          <label>Mobile Number</label>
+          <input type="text" id="mono"/><br /><br />
+          <label>Symptoms</label>
+          <input type="text" id="sym"/><br /><br />
+          <label>Message</label>
+          <textarea  rows="3" column="5" id="msg"></textarea><br /><br />
+          <button type="submit" onclick="re()" >Submit</button>
+        </form>
+    </div>
+    <script>
+function fun(){
+    alert("Confirmation is done Doctor will contact you "+"\n"+"THANK YOU");
+    document.location.href="doctor ap.html";
+}
+function re(){
+  alert("Your query is recorded"+"\n"+"we will contact you soon ");
+  document.location.href="doctor ap.html";
+}
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+        <script src="appoinment.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+        <script src="cwd.js"></script>
+  </body>
+</html>

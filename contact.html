@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Medi Care</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-title">
+        <h1 style="margin-left: 600px"><span style="color: blue;">MEDI</span> CARE</h1>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>Customer login</li>
+          <li>Contact Us</li>
+          <li>About Us</li>
+          <li>Home</li>
+        </ul>
+      </div>
+    </div>
+    <div class="intro">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="medicine.html">ALL MEDICINES</a>
+      <a href="doctor ap.html">DOCTOR APPOINTMENT</a>
+      <a href="index.html">LOGOUT</a>
+      <a href="contact.html">CONTACT US</a>
+    </div>
+    <div class="main" style="margin-left: 150px;margin-right: 150px;"><br><br> 
+      <h1 style="margin-left: 450px;color: blueviolet;">Customer Service</h1>
+      <form id="contactForm" style="padding-top: 50px;">
+        <div style="border: 2px solid;margin-right: 400px;margin-left: 400px; border-radius: 20px;width: 400px;padding-left: 20px;">
+        <p><br>
+          <label>Name :</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+          <label>Email Address :</label>
+          <input type="email" name="email" id="email" required pattern=".+@gmail.com">
+        </p>
+        <p>
+          <label>Phone Number :</label>
+          <input type="text" name="phone" id="phone" >
+        </p>
+        <label>Feedback :</label><br>
+        <p class="full" style="padding-left: 40px;">
+          <textarea name="message" rows="10" cols="30" id="message" ></textarea>
+        </p>
+        <p class="full" style="padding-left: 150px;">
+          <button type="submit" >Submit</button>
+        </p>
+      </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+<script src="contacts.js"></script>
+  </body>
+</html>
